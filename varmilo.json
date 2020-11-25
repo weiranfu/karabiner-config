@@ -1,0 +1,400 @@
+{
+  "title": "Key settings for varmilo keyboard.",
+  "rules": [
+      {
+          "description": "Change Fn-U to PageUp, Fn-O to PageDown",
+          "manipulators": [
+              {
+                  "type": "basic",
+
+                  "from": {
+                    "key_code": "u",
+                    "modifiers": {
+                      "mandatory": ["fn"],
+                      "optional": [
+                        "caps_lock",
+                        "option",
+                        "command",
+                        "shift",
+                        "control"
+                      ]
+                    }
+                  },
+
+                  "to": [
+                      {
+                        "key_code": "page_up"
+                      }
+                  ]
+              },
+            {
+                  "type": "basic",
+
+                  "from": {
+                    "key_code": "o",
+                    "modifiers": {
+                      "mandatory": ["fn"],
+                      "optional": [
+                        "caps_lock",
+                        "option",
+                        "command",
+                        "shift",
+                        "control"
+                      ]
+                    }
+                  },
+
+                  "to": [
+                      {
+                        "key_code": "page_down"
+                      }
+                  ]
+            }
+          ]
+      },
+      {
+          "description": "Change Fn-N to Home, Fn-. to End",
+          "manipulators": [
+              {
+                  "type": "basic",
+
+                  "from": {
+                    "key_code": "n",
+                    "modifiers": {
+                      "mandatory": ["fn"],
+                      "optional": [
+                        "caps_lock",
+                        "option",
+                        "command",
+                        "shift",
+                        "control"
+                      ]
+                    }
+                  },
+
+                  "to": [
+                      {
+                        "key_code": "home"
+                      }
+                    ]
+              },
+              {
+                  "type": "basic",
+
+                  "from": {
+                    "key_code": "period",
+                    "modifiers": {
+                      "mandatory": ["fn"],
+                      "optional": [
+                        "caps_lock",
+                        "option",
+                        "command",
+                        "shift",
+                        "control"
+                      ]
+                    }
+                  },
+
+                  "to": [
+                    {
+                      "key_code": "end"
+                    }
+                  ]
+              }
+          ]
+      },
+      {
+          "description": "Cursor moving: Change Fn-F to Alt-RightArrow, Fn-B to Alt-LeftArrow",
+          "manipulators": [
+              {
+                  "type": "basic",
+
+                  "from": {
+                    "key_code": "f",
+                    "modifiers": {
+                      "mandatory": ["fn"],
+                      "optional": [
+                        "caps_lock",
+                        "option",
+                        "command",
+                        "shift",
+                        "control"
+                      ]
+                    }
+                  },
+
+                  "to": [
+                    {
+                      "key_code": "right_arrow",
+                      "modifiers": [
+                        "option"
+                      ]
+                    }
+                  ]
+              },
+              {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "b",
+                  "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": [
+                      "caps_lock",
+                      "option",
+                      "command",
+                      "shift",
+                      "control"
+                    ]
+                  }
+                },
+
+                "to": [
+                  {
+                    "key_code": "left_arrow",
+                    "modifiers": [
+                      "option"
+                    ]
+                  }
+                ]
+            }
+          ]
+      },
+      {
+        "description": "Change Fn-/ to Caps-lock",
+        "manipulators": [
+            {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "slash",
+                  "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": [
+                      "caps_lock",
+                      "option",
+                      "command",
+                      "shift",
+                      "control"
+                    ]
+                  }
+                },
+
+                "to": [
+                  {
+                    "key_code": "caps_lock"
+                  }
+                ]
+            }
+        ]
+      },
+      {
+        "description": "Change Left_ALT to WIN",
+        "manipulators": [
+            {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "left_option"
+                },
+
+                "to": [
+                  {
+                    "key_code": "left_command"
+                  }
+                ]
+            }
+        ]
+      },
+      {
+        "description": "Change WIN to Right_ALT",
+        "manipulators": [
+            {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "left_command"
+                },
+
+                "to": [
+                  {
+                    "key_code": "right_option"
+                  }
+                ]
+            }
+        ]
+      },
+      {
+        "description": "Change CapsLock to Fn",
+        "manipulators": [
+            {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "caps_lock"
+                },
+
+                "to": [
+                  {
+                    "key_code": "fn"
+                  }
+                ]
+            }
+        ]
+      },
+      {
+        "description": "Change Fn-HJKL to Arrow left,down,up,right",
+        "manipulators": [
+          {
+              "type": "basic",
+
+              "from": {
+                "key_code": "h",
+                "modifiers": {
+                  "mandatory": ["fn"],
+                  "optional": [
+                    "caps_lock",
+                    "option",
+                    "command",
+                    "shift",
+                    "control"
+                  ]
+                }
+              },
+
+              "to": [
+                {
+                  "key_code": "left_arrow"
+                }
+              ]
+          },
+          {
+              "type": "basic",
+
+              "from": {
+                "key_code": "j",
+                "modifiers": {
+                  "mandatory": ["fn"],
+                  "optional": [
+                    "caps_lock",
+                    "option",
+                    "command",
+                    "shift",
+                    "control"
+                  ]
+                }
+              },
+
+              "to": [
+                {
+                  "key_code": "down_arrow"
+                }
+              ]
+          },
+          {
+              "type": "basic",
+
+              "from": {
+                "key_code": "k",
+                "modifiers": {
+                  "mandatory": ["fn"],
+                  "optional": [
+                    "caps_lock",
+                    "option",
+                    "command",
+                    "shift",
+                    "control"
+                  ]
+                }
+              },
+
+              "to": [
+                {
+                  "key_code": "up_arrow"
+                }
+              ]
+          },
+          {
+              "type": "basic",
+
+              "from": {
+                "key_code": "l",
+                "modifiers": {
+                  "mandatory": ["fn"],
+                  "optional": [
+                    "caps_lock",
+                    "option",
+                    "command",
+                    "shift",
+                    "control"
+                  ]
+                }
+              },
+
+              "to": [
+                {
+                  "key_code": "right_arrow"
+                }
+              ]
+          }
+        ]
+      },
+      {
+        "description": "Change Fn-' to `",
+        "manipulators": [
+            {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "quote",
+                  "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": [
+                      "caps_lock",
+                      "option",
+                      "command",
+                      "shift",
+                      "control"
+                    ]
+                  }
+                },
+
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde"
+                  }
+                ]
+            }
+        ]
+      },
+      {
+        "description": "Change Fn-; to ~",
+        "manipulators": [
+            {
+                "type": "basic",
+
+                "from": {
+                  "key_code": "semicolon",
+                  "modifiers": {
+                    "mandatory": ["fn"],
+                    "optional": [
+                      "caps_lock",
+                      "option",
+                      "command",
+                      "shift",
+                      "control"
+                    ]
+                  }
+                },
+
+                "to": [
+                  {
+                    "key_code": "grave_accent_and_tilde",
+                    "modifiers": ["shift"]
+                  }
+                ]
+            }
+        ]
+      }
+  ]
+}
