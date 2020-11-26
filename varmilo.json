@@ -53,13 +53,13 @@
           ]
       },
       {
-          "description": "Change Fn-N to Home, Fn-. to End",
+          "description": "Change Fn-M to Home, Fn-. to End",
           "manipulators": [
               {
                   "type": "basic",
 
                   "from": {
-                    "key_code": "n",
+                    "key_code": "m",
                     "modifiers": {
                       "mandatory": ["fn"],
                       "optional": [
