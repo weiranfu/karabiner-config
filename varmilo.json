@@ -74,7 +74,8 @@
 
                   "to": [
                       {
-                        "key_code": "home"
+                        "key_code": "a",
+                        "modifiers": ["control"]
                       }
                     ]
               },
@@ -97,7 +98,8 @@
 
                   "to": [
                     {
-                      "key_code": "end"
+                      "key_code": "e",
+                      "modifiers": ["control"]
                     }
                   ]
               }
